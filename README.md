@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+
+![https://github.com/hideokamoto/zuiho/blob/master/screenshot.png](https://github.com/hideokamoto/zuiho/blob/master/screenshot.png "https://github.com/hideokamoto/zuiho/blob/master/screenshot.png")
 
 Zuiho(Basede on _s)
 ===
