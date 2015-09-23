@@ -115,6 +115,8 @@ add_action( 'widgets_init', 'zuiho_widgets_init' );
  */
 function zuiho_scripts() {
 
+	wp_enqueue_style(  'zuiho-bootstrap-style', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' );
+	wp_enqueue_script( 'zuiho-bootstrap-script', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', array(), '3.3.5', true );
 	wp_enqueue_style( 'zuiho-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'zuiho-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
@@ -151,10 +153,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
-
-
-function theme_name_scripts() {
-	wp_enqueue_style(  'theme-name', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' );
-}
-add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
